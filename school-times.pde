@@ -37,7 +37,7 @@ class Time {
 
 void setup() {
  // size(1000, 300);
- size(displayWidth, displayHeight);
+ //size(displayWidth, displayHeight);
 }
 
 void draw() {
