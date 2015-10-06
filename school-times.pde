@@ -36,7 +36,7 @@ class Time {
 }
 
 void setup() {
- // size(1000, 300);
+ size(1000, 500);
  //size(displayWidth, displayHeight);
 }
 
