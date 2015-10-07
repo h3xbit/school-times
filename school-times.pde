@@ -36,15 +36,16 @@ class Time {
 }
 
 void setup() {
- size(1000, 500);
+// size(1000, 500);
  //size(displayWidth, displayHeight);
+size(window.innerWidth, window.innerHeight); 
 }
 
 void draw() {
  // Calendar rightNow = Calendar.getInstance();
  // Time now = new Time(rightNow.get(Calendar.HOUR_OF_DAY), //rightNow.get(Calendar.MINUTE)); 
   //int nowMins = now.getTotalMins();
-  Int nowMins = (hour()*60)+minute();
+  int nowMins = (hour()*60)+minute();
   stroke(0);
   for (int i = 0; i < times.length-1; i ++ ) {
     int mins = times[i].getTotalMins();
@@ -60,7 +61,7 @@ void draw() {
   fill(0, 0, 255);
   stroke(0, 0, 255);
   rect(nowMins*scaleX, 0, 1*scaleX, height);
-  println("as");
+ // println("as");
   //try {
   //  Thread.sleep(1000);                 //1000 milliseconds is one second.
   //} 
