@@ -41,9 +41,10 @@ void setup() {
 }
 
 void draw() {
-  Calendar rightNow = Calendar.getInstance();
-  Time now = new Time(rightNow.get(Calendar.HOUR_OF_DAY), rightNow.get(Calendar.MINUTE)); 
-  int nowMins = now.getTotalMins();
+ // Calendar rightNow = Calendar.getInstance();
+ // Time now = new Time(rightNow.get(Calendar.HOUR_OF_DAY), //rightNow.get(Calendar.MINUTE)); 
+  //int nowMins = now.getTotalMins();
+  Int nowMins = (hour()*60)+minute();
   stroke(0);
   for (int i = 0; i < times.length-1; i ++ ) {
     int mins = times[i].getTotalMins();
