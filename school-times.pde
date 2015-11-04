@@ -5,6 +5,8 @@ import java.util.Date;
 
 int totalTime = 400; //6*60+40(in mins)
 
+int offset = 500;
+
 //subject/break
 
 int xPad = 200;
@@ -31,7 +33,7 @@ class Time {
     this.hours = hours;
   }  
   int getTotalMins() {
-    return (60*hours+mins)-450;//shift to left to fit on screen
+    return (60*hours+mins)-offset;//shift to left to fit on screen
   }
 }
 
@@ -46,7 +48,7 @@ void draw() {
  // Time now = new Time(rightNow.get(Calendar.HOUR_OF_DAY), //rightNow.get(Calendar.MINUTE)); 
   //int nowMins = now.getTotalMins();
  // println(hour());
-  int nowMins = (hour()*60)+minute()-450;
+  int nowMins = (hour()*60)+minute()-offset;
   stroke(0);
   for (int i = 0; i < times.length-1; i ++ ) {
     int mins = times[i].getTotalMins();
@@ -58,6 +60,7 @@ void draw() {
       fill(0, 255, 0);
     }
     rect(mins*scaleX, 0, mins2*scaleX, height);
+    text(times[i].hours+":"+times[i].mins,mins*scaleX,50);
   }
   fill(0, 0, 255);
   stroke(0, 0, 255);
