@@ -11,7 +11,8 @@ int offset = 500;
 
 int xPad = 200;
 
-float scaleX = 3;
+
+float scaleX = width/600;
 
 Time[] times = {
   new Time(9, 10), 
@@ -44,6 +45,7 @@ size(window.innerWidth, window.innerHeight);
 }
 
 void draw() {
+  
  // Calendar rightNow = Calendar.getInstance();
  // Time now = new Time(rightNow.get(Calendar.HOUR_OF_DAY), //rightNow.get(Calendar.MINUTE)); 
   //int nowMins = now.getTotalMins();
