@@ -45,7 +45,7 @@ void draw() {
  // Calendar rightNow = Calendar.getInstance();
  // Time now = new Time(rightNow.get(Calendar.HOUR_OF_DAY), //rightNow.get(Calendar.MINUTE)); 
   //int nowMins = now.getTotalMins();
-  println(hour());
+ // println(hour());
   int nowMins = (hour()*60)+minute()-450;
   stroke(0);
   for (int i = 0; i < times.length-1; i ++ ) {
