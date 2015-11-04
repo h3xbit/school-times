@@ -45,7 +45,8 @@ size(window.innerWidth, window.innerHeight);
 }
 
 void draw() {
-  println(scaleX);
+  println(width);
+  
  // Calendar rightNow = Calendar.getInstance();
  // Time now = new Time(rightNow.get(Calendar.HOUR_OF_DAY), //rightNow.get(Calendar.MINUTE)); 
   //int nowMins = now.getTotalMins();
