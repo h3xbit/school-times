@@ -58,7 +58,7 @@ void draw() {
     }
     rect(mins*scaleX, 0, mins2*scaleX, height);
     fill(0);
-    text(times[i].hours+":"+times[i].mins,mins*scaleX,50);
+    text(times[i].hours+":"+times[i].mins,mins*scaleX,height-100);
   }
   fill(0, 0, 255);
   stroke(0, 0, 255);
