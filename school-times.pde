@@ -57,6 +57,7 @@ void draw() {
       fill(0, 255, 0);
     }
     rect(mins*scaleX, 0, mins2*scaleX, height);
+    fill(0);
     text(times[i].hours+":"+times[i].mins,mins*scaleX,50);
   }
   fill(0, 0, 255);
