@@ -57,12 +57,16 @@ void draw() {
       fill(0, 255, 0);
     }
     rect(mins*scaleX, 0, mins2*scaleX, height);
-    fill(0);
-    text(times[i].hours+":"+times[i].mins,mins*scaleX,(height-100)+(i*10));
+    
   }
+  
   fill(0, 0, 255);
   stroke(0, 0, 255);
   rect(nowMins*scaleX, 0, 1*scaleX, height);
+   for (int i = 0; i < times.length-1; i ++ ) {
+   fill(0);
+    text(times[i].hours+":"+times[i].mins,mins*scaleX,(height-100)+(i*10));
+   }
  // println("as");
   //try {
   //  Thread.sleep(1000);                 //1000 milliseconds is one second.
