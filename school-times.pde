@@ -63,8 +63,11 @@ void draw() {
   fill(0, 0, 255);
   stroke(0, 0, 255);
   rect(nowMins*scaleX, 0, 1*scaleX, height);
-   for (int i = 0; i < times.length-1; i ++ ) {
-   fill(0);
+  for (int i = 0; i < times.length-1; i ++ ) {
+    fill(0);
+    int mins = times[i].getTotalMins();
+   // int mins2 = times[i+1].getTotalMins()-mins;
+
     text(times[i].hours+":"+times[i].mins,mins*scaleX,(height-100)+(i*10));
    }
  // println("as");
