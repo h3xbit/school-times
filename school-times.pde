@@ -45,7 +45,7 @@ void draw() {
   
   int nowMins = (hour()*60)+minute()-offset;
   stroke(0);
-  for (int i = 0; i < times.length; i ++ ) {
+  for (int i = 0; i < times.length-1; i ++ ) {
     int mins = times[i].getTotalMins();
     int mins2 = times[i+1].getTotalMins()-mins;
 
