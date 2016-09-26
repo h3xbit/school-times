@@ -16,7 +16,8 @@ Time[] times = {
   new Time(9, 10), 
   new Time(10, 30),  
   new Time(11, 00), 
-  new Time(12, 30), 
+  new Time(12, 30),
+  new Time(13, 30),
   new Time(14, 45), 
   new Time(15, 00), 
   new Time(14, 30)
