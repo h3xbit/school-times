@@ -61,7 +61,7 @@ void draw() {
   fill(0, 0, 255);
   stroke(0, 0, 255);
   rect(nowMins*scaleX, 0, 1*scaleX, height);
-  for (int i = 0; i < times.length-1; i ++ ) {
+  for (int i = 0; i < times.length; i ++ ) {
     fill(0);
     int mins = times[i].getTotalMins();
    // int mins2 = times[i+1].getTotalMins()-mins;
