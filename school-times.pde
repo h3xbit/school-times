@@ -14,15 +14,12 @@ int xPad = 200;
 
 Time[] times = {
   new Time(9, 10), 
-  new Time(10, 10), 
-  new Time(10, 15), 
-  new Time(11, 15), 
-  new Time(11, 40), 
-  new Time(12, 40), 
-  new Time(13, 45), 
+  new Time(10, 30),  
+  new Time(11, 00), 
+  new Time(12, 30), 
   new Time(14, 45), 
-  new Time(14, 50), 
-  new Time(15, 50)
+  new Time(15, 00), 
+  new Time(14, 30)
 };
 
 class Time {
