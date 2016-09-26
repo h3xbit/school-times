@@ -20,7 +20,7 @@ Time[] times = {
   new Time(13, 30),
   new Time(14, 45), 
   new Time(15, 00), 
-  new Time(14, 30)
+  new Time(16, 30)
 };
 
 class Time {
